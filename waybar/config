@@ -1,0 +1,16 @@
+{
+    "layer": "top",
+    "margin-left": 20,
+    "margin-right": 20,
+    "modules-left": ["sway/workspaces", "sway/mode"],
+    "modules-center": ["sway/window"],
+    "modules-right": ["tray", "clock"],
+    
+    "sway/window": {
+        "max-length": 50
+    },
+    "clock": {
+        "format": "{:%I:%M %P}",
+        "format-alt": "{:%A %B %d. %Y}"
+    }
+}

@@ -1,0 +1,8 @@
+prompt=
+insensitive=true
+key_up=Control_L-k
+key_down=Control_L-j
+no_actions=true
+hide_scroll=true
+width=600
+height=275

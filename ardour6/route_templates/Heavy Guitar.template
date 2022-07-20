@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Route version="6000" id="215" name="Heavy Guitar" default-type="audio" strict-io="1" active="1" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak" audio-playlist="167" saved-meter-point="MeterPostFader" alignment-choice="Automatic" mode="Normal">
+  <ProgramVersion created-with="Ardour 6.9.0~ds0-1build1" modified-with="Ardour 6.9.0~ds0-1build1" name="Heavy Guitar"/>
+  <PresentationInfo order="1" flags="AudioTrack,OrderSet" color="3169155583"/>
+  <Controllable name="solo" id="178" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
+  <Controllable name="solo-iso" id="469" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
+  <Controllable name="solo-safe" id="470" flags="Toggle" value="0" solo-safe="0"/>
+  <IO name="Heavy Guitar 1" id="216" direction="Input" default-type="audio">
+    <Port type="audio" name="Heavy Guitar 1/audio_in 1">
+      <Connection other="system:capture_1"/>
+    </Port>
+  </IO>
+  <IO name="Heavy Guitar 1" id="219" direction="Output" default-type="audio">
+    <Port type="audio" name="Heavy Guitar 1/audio_out 1">
+      <Connection other="Master/audio_in 1"/>
+      <Connection other="system:playback_1"/>
+    </Port>
+    <Port type="audio" name="Heavy Guitar 1/audio_out 2">
+      <Connection other="Master/audio_in 2"/>
+      <Connection other="system:playback_2"/>
+    </Port>
+  </IO>
+  <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
+  <Controllable name="mute" id="471" flags="Toggle,RealTime" value="0"/>
+  <Controllable name="phase" id="472" flags="Toggle" value="0" phase-invert="0"/>
+  <Automation>
+    <AutomationList automation-id="solo" id="473" interpolation-style="Discrete" state="Off"/>
+    <AutomationList automation-id="solo-iso" id="474" interpolation-style="Discrete" state="Off"/>
+    <AutomationList automation-id="solo-safe" id="475" interpolation-style="Discrete" state="Off"/>
+    <AutomationList automation-id="mute" id="476" interpolation-style="Discrete" state="Off"/>
+    <AutomationList automation-id="rec-enable" id="477" interpolation-style="Discrete" state="Off"/>
+    <AutomationList automation-id="rec-safe" id="478" interpolation-style="Discrete" state="Off"/>
+    <AutomationList automation-id="phase" id="479" interpolation-style="Discrete" state="Off"/>
+    <AutomationList automation-id="monitor" id="480" interpolation-style="Discrete" state="Off"/>
+  </Automation>
+  <Pannable>
+    <Controllable name="pan-azimuth" id="221" flags="" value="0.5"/>
+    <Controllable name="pan-width" id="222" flags="" value="0"/>
+    <Controllable name="pan-elevation" id="223" flags="" value="0"/>
+    <Controllable name="pan-frontback" id="224" flags="" value="0"/>
+    <Controllable name="pan-lfe" id="225" flags="" value="0"/>
+    <Automation>
+      <AutomationList automation-id="pan-azimuth" id="226" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="pan-elevation" id="227" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="pan-width" id="228" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="pan-frontback" id="229" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="pan-lfe" id="230" interpolation-style="Linear" state="Off"/>
+    </Automation>
+  </Pannable>
+  <Processor id="231" name="recorder:Audio 1" active="1" user-latency="0" use-user-latency="0" type="diskwriter" record-safe="0"/>
+  <Processor id="234" name="player:Audio 1" active="1" user-latency="0" use-user-latency="0" type="diskreader"/>
+  <Processor id="235" name="Polarity" active="1" user-latency="0" use-user-latency="0" type="polarity"/>
+  <Processor id="236" name="Amp" active="1" user-latency="0" use-user-latency="0" type="trim">
+    <Automation>
+      <AutomationList automation-id="trim" id="237" interpolation-style="Logarithmic" state="Off"/>
+    </Automation>
+    <Controllable name="trimcontrol" id="238" flags="GainLike" value="1"/>
+  </Processor>
+  <Processor id="506" name="GxTuner" active="1" user-latency="0" use-user-latency="0" type="lv2" unique-id="http://guitarix.sourceforge.net/plugins/gxtuner#tuner" count="1" custom="0">
+    <Automation>
+      <AutomationList automation-id="parameter-1" id="507" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-2" id="509" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-3" id="511" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-4" id="513" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-6" id="515" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-7" id="517" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-8" id="519" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-9" id="521" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-10" id="523" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-11" id="525" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-12" id="527" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-13" id="529" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-14" id="531" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-15" id="533" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-16" id="535" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-17" id="537" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-18" id="539" interpolation-style="Linear" state="Off"/>
+    </Automation>
+    <ConfiguredInput>
+      <Channels type="audio" count="1"/>
+    </ConfiguredInput>
+    <CustomSinks>
+      <Channels type="audio" count="1"/>
+    </CustomSinks>
+    <ConfiguredOutput>
+      <Channels type="audio" count="1"/>
+    </ConfiguredOutput>
+    <PresetOutput/>
+    <InputMap-0>
+      <Channelmap type="audio" from="0" to="0"/>
+    </InputMap-0>
+    <OutputMap-0>
+      <Channelmap type="audio" from="0" to="0"/>
+    </OutputMap-0>
+    <ThruMap/>
+    <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="0" template-dir="/home/bostick/.config/ardour6/route_templates/Heavy Guitar">
+      <Port symbol="REFFREQ" value="440"/>
+      <Port symbol="TUNER_MODE" value="0"/>
+      <Port symbol="TEMPERAMENT" value="0"/>
+      <Port symbol="THRESHOLD" value="-50"/>
+      <Port symbol="RESET" value="1"/>
+      <Port symbol="LEVEL" value="-45"/>
+      <Port symbol="CHANNEL" value="0"/>
+      <Port symbol="MIDI_ON" value="0"/>
+      <Port symbol="FASTNOTE" value="0"/>
+      <Port symbol="PITCHBEND" value="0"/>
+      <Port symbol="SINGLENOTE" value="0"/>
+      <Port symbol="BPM" value="0"/>
+      <Port symbol="VELOCITY" value="64"/>
+      <Port symbol="VERIFY" value="1"/>
+      <Port symbol="GATE" value="0"/>
+      <Port symbol="SYNTHFREQ" value="220"/>
+      <Port symbol="GAIN" value="1"/>
+    </lv2>
+    <Controllable name="REFFREQ" id="508" flags="" value="440" parameter="1" symbol="REFFREQ"/>
+    <Controllable name="Tuner Mode" id="510" flags="" value="0" parameter="2" symbol="TUNER_MODE"/>
+    <Controllable name="TEMPERAMENT" id="512" flags="" value="0" parameter="3" symbol="TEMPERAMENT"/>
+    <Controllable name="THRESHOLD" id="514" flags="" value="-50" parameter="4" symbol="THRESHOLD"/>
+    <Controllable name="RESET" id="516" flags="" value="1" parameter="6" symbol="RESET"/>
+    <Controllable name="LEVEL" id="518" flags="" value="-45" parameter="7" symbol="LEVEL"/>
+    <Controllable name="CHANNELL" id="520" flags="" value="0" parameter="8" symbol="CHANNEL"/>
+    <Controllable name="MIDI_ON" id="522" flags="" value="0" parameter="9" symbol="MIDI_ON"/>
+    <Controllable name="FASTNOTE" id="524" flags="" value="0" parameter="10" symbol="FASTNOTE"/>
+    <Controllable name="PITCHBEND" id="526" flags="" value="0" parameter="11" symbol="PITCHBEND"/>
+    <Controllable name="SINGLENOTE" id="528" flags="" value="0" parameter="12" symbol="SINGLENOTE"/>
+    <Controllable name="BPM" id="530" flags="" value="0" parameter="13" symbol="BPM"/>
+    <Controllable name="VELOCITY" id="532" flags="" value="64" parameter="14" symbol="VELOCITY"/>
+    <Controllable name="VERIFY" id="534" flags="" value="1" parameter="15" symbol="VERIFY"/>
+    <Controllable name="GATE" id="536" flags="" value="0" parameter="16" symbol="GATE"/>
+    <Controllable name="SYNTHFREQ" id="538" flags="" value="220" parameter="17" symbol="SYNTHFREQ"/>
+    <Controllable name="GAIN" id="540" flags="" value="1" parameter="18" symbol="GAIN"/>
+  </Processor>
+  <Processor id="254" name="GxTubeScreamer" active="1" user-latency="0" use-user-latency="0" type="lv2" unique-id="http://guitarix.sourceforge.net/plugins/gxts9#ts9sim" count="1" custom="0">
+    <Automation>
+      <AutomationList automation-id="parameter-0" id="255" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-1" id="256" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-2" id="257" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-5" id="258" interpolation-style="Discrete" state="Off"/>
+    </Automation>
+    <ConfiguredInput>
+      <Channels type="audio" count="1"/>
+    </ConfiguredInput>
+    <CustomSinks>
+      <Channels type="audio" count="1"/>
+    </CustomSinks>
+    <ConfiguredOutput>
+      <Channels type="audio" count="1"/>
+    </ConfiguredOutput>
+    <PresetOutput/>
+    <InputMap-0>
+      <Channelmap type="audio" from="0" to="0"/>
+    </InputMap-0>
+    <OutputMap-0>
+      <Channelmap type="audio" from="0" to="0"/>
+    </OutputMap-0>
+    <ThruMap/>
+    <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/bostick/.config/ardour6/route_templates/Heavy Guitar">
+      <Port symbol="fslider0_" value="3.9731411933898926"/>
+      <Port symbol="fslider1_" value="1000"/>
+      <Port symbol="fslider2_" value="0"/>
+      <Port symbol="BYPASS" value="1"/>
+    </lv2>
+    <Controllable name="Level" id="250" flags="" value="3.9731411933898926" parameter="0" symbol="fslider0_"/>
+    <Controllable name="Tone" id="251" flags="" value="1000" parameter="1" symbol="fslider1_"/>
+    <Controllable name="Drive" id="252" flags="" value="0" parameter="2" symbol="fslider2_"/>
+    <Controllable name="BYPASS" id="253" flags="Toggle" value="1" parameter="5" symbol="BYPASS"/>
+  </Processor>
+  <Processor id="268" name="TAP TubeWarmth" active="1" user-latency="0" use-user-latency="0" type="ladspa" unique-id="2158" count="1" custom="0">
+    <Automation>
+      <AutomationList automation-id="parameter-0" id="269" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-1" id="270" interpolation-style="Linear" state="Off"/>
+    </Automation>
+    <ConfiguredInput>
+      <Channels type="audio" count="1"/>
+    </ConfiguredInput>
+    <CustomSinks>
+      <Channels type="audio" count="1"/>
+    </CustomSinks>
+    <ConfiguredOutput>
+      <Channels type="audio" count="1"/>
+    </ConfiguredOutput>
+    <PresetOutput/>
+    <InputMap-0>
+      <Channelmap type="audio" from="0" to="0"/>
+    </InputMap-0>
+    <OutputMap-0>
+      <Channelmap type="audio" from="0" to="0"/>
+    </OutputMap-0>
+    <ThruMap/>
+    <ladspa last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1">
+      <Port number="0" value="10"/>
+      <Port number="1" value="-10"/>
+    </ladspa>
+    <Controllable name="Drive" id="266" flags="" value="10" parameter="0"/>
+    <Controllable name="Tape--Tube Blend" id="267" flags="" value="-10" parameter="1"/>
+  </Processor>
+  <Processor id="280" name="GxMXR Distortion" active="1" user-latency="0" use-user-latency="0" type="lv2" unique-id="http://guitarix.sourceforge.net/plugins/gx_mxrdist_#_mxrdist_" count="1" custom="0">
+    <Automation>
+      <AutomationList automation-id="parameter-2" id="281" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-3" id="282" interpolation-style="Linear" state="Off"/>
+    </Automation>
+    <ConfiguredInput>
+      <Channels type="audio" count="1"/>
+    </ConfiguredInput>
+    <CustomSinks>
+      <Channels type="audio" count="1"/>
+    </CustomSinks>
+    <ConfiguredOutput>
+      <Channels type="audio" count="1"/>
+    </ConfiguredOutput>
+    <PresetOutput/>
+    <InputMap-0>
+      <Channelmap type="audio" from="0" to="0"/>
+    </InputMap-0>
+    <OutputMap-0>
+      <Channelmap type="audio" from="0" to="0"/>
+    </OutputMap-0>
+    <ThruMap/>
+    <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/bostick/.config/ardour6/route_templates/Heavy Guitar">
+      <Port symbol="VOLUME" value="0.69999998807907104"/>
+      <Port symbol="DRIVE" value="0.5"/>
+    </lv2>
+    <Controllable name="VOLUME" id="278" flags="" value="0.69999998807907104" parameter="2" symbol="VOLUME"/>
+    <Controllable name="DRIVE" id="279" flags="" value="0.5" parameter="3" symbol="DRIVE"/>
+  </Processor>
+  <Processor id="307" name="ZamGate" active="1" user-latency="0" use-user-latency="0" type="lv2" unique-id="urn:zamaudio:ZamGate" count="1" custom="0">
+    <Automation>
+      <AutomationList automation-id="parameter-3" id="308" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-4" id="309" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-5" id="310" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-6" id="311" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-7" id="312" interpolation-style="Discrete" state="Off"/>
+      <AutomationList automation-id="parameter-8" id="313" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-9" id="314" interpolation-style="Discrete" state="Off"/>
+    </Automation>
+    <ConfiguredInput>
+      <Channels type="audio" count="1"/>
+    </ConfiguredInput>
+    <CustomSinks>
+      <Channels type="audio" count="2"/>
+    </CustomSinks>
+    <ConfiguredOutput>
+      <Channels type="audio" count="1"/>
+    </ConfiguredOutput>
+    <PresetOutput/>
+    <InputMap-0>
+      <Channelmap type="audio" from="0" to="0"/>
+      <Channelmap type="audio" from="1" to="1"/>
+    </InputMap-0>
+    <OutputMap-0>
+      <Channelmap type="audio" from="0" to="0"/>
+    </OutputMap-0>
+    <ThruMap/>
+    <Processor id="315" name="SC Heavy Guitar 1/ZamGate 2" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="sidechain">
+      <IO name="SC Heavy Guitar 1/ZamGate 2" id="316" direction="Input" default-type="audio" pretty-name="SC ZamGate">
+        <Port type="audio" name="SC Heavy Guitar 1/ZamGate 2/audio_in 1"/>
+      </IO>
+    </Processor>
+    <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/bostick/.config/ardour6/route_templates/Heavy Guitar">
+      <Port symbol="att" value="50"/>
+      <Port symbol="rel" value="0.10000000149011612"/>
+      <Port symbol="thr" value="-30.300075531005859"/>
+      <Port symbol="mak" value="7.152557373046875e-07"/>
+      <Port symbol="sidechain" value="0"/>
+      <Port symbol="close" value="-50"/>
+      <Port symbol="mode" value="0"/>
+    </lv2>
+    <Controllable name="Attack" id="300" flags="" value="50" parameter="3" symbol="att"/>
+    <Controllable name="Release" id="301" flags="" value="0.10000000149011612" parameter="4" symbol="rel"/>
+    <Controllable name="Threshold" id="302" flags="" value="-30.300075531005859" parameter="5" symbol="thr"/>
+    <Controllable name="Makeup" id="303" flags="" value="7.152557373046875e-07" parameter="6" symbol="mak"/>
+    <Controllable name="Sidechain" id="304" flags="Toggle" value="0" parameter="7" symbol="sidechain"/>
+    <Controllable name="Max gate close" id="305" flags="" value="-50" parameter="8" symbol="close"/>
+    <Controllable name="Mode open/shut" id="306" flags="Toggle" value="0" parameter="9" symbol="mode"/>
+  </Processor>
+  <Processor id="317" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
+    <Automation>
+      <AutomationList automation-id="gain" id="318" interpolation-style="Exponential" state="Off"/>
+    </Automation>
+    <Controllable name="gaincontrol" id="319" flags="GainLike" value="1"/>
+  </Processor>
+  <Processor id="365" name="GxAmplifier-X" active="1" user-latency="0" use-user-latency="0" type="lv2" unique-id="http://guitarix.sourceforge.net/plugins/gx_amp#GUITARIX" count="1" custom="0">
+    <Automation>
+      <AutomationList automation-id="parameter-0" id="366" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-1" id="367" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-2" id="368" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-3" id="369" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-4" id="370" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-5" id="371" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-6" id="372" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-7" id="373" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-8" id="374" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-9" id="375" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-10" id="376" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-11" id="377" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-17" id="378" interpolation-style="Discrete" state="Off"/>
+      <AutomationList automation-id="parameter-18" id="379" interpolation-style="Discrete" state="Off"/>
+    </Automation>
+    <ConfiguredInput>
+      <Channels type="audio" count="1"/>
+    </ConfiguredInput>
+    <CustomSinks>
+      <Channels type="audio" count="1"/>
+    </CustomSinks>
+    <ConfiguredOutput>
+      <Channels type="audio" count="1"/>
+    </ConfiguredOutput>
+    <PresetOutput/>
+    <InputMap-0>
+      <Channelmap type="audio" from="0" to="0"/>
+    </InputMap-0>
+    <OutputMap-0>
+      <Channelmap type="audio" from="0" to="0"/>
+    </OutputMap-0>
+    <ThruMap/>
+    <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/bostick/.config/ardour6/route_templates/Heavy Guitar">
+      <Port symbol="MasterGain" value="0"/>
+      <Port symbol="PreGain" value="0"/>
+      <Port symbol="Distortion" value="45"/>
+      <Port symbol="Drive" value="0.66999995708465576"/>
+      <Port symbol="Middle" value="0.35999998450279236"/>
+      <Port symbol="Bass" value="0.70999997854232788"/>
+      <Port symbol="Treble" value="0.56999999284744263"/>
+      <Port symbol="Cabinet" value="6.3000001907348633"/>
+      <Port symbol="Presence" value="5"/>
+      <Port symbol="model" value="10"/>
+      <Port symbol="t_model" value="9"/>
+      <Port symbol="c_model" value="2"/>
+      <Port symbol="BYPASS" value="1"/>
+      <Port symbol="HIGHGAIN" value="0"/>
+    </lv2>
+    <Controllable name="MasterGain" id="351" flags="" value="0" parameter="0" symbol="MasterGain"/>
+    <Controllable name="PreGain" id="352" flags="" value="0" parameter="1" symbol="PreGain"/>
+    <Controllable name="Distortion" id="353" flags="" value="45" parameter="2" symbol="Distortion"/>
+    <Controllable name="Drive" id="354" flags="" value="0.66999995708465576" parameter="3" symbol="Drive"/>
+    <Controllable name="Middle" id="355" flags="" value="0.35999998450279236" parameter="4" symbol="Middle"/>
+    <Controllable name="Bass" id="356" flags="" value="0.70999997854232788" parameter="5" symbol="Bass"/>
+    <Controllable name="Treble" id="357" flags="" value="0.56999999284744263" parameter="6" symbol="Treble"/>
+    <Controllable name="Cabinet" id="358" flags="" value="6.3000001907348633" parameter="7" symbol="Cabinet"/>
+    <Controllable name="Presence" id="359" flags="" value="5" parameter="8" symbol="Presence"/>
+    <Controllable name="Model" id="360" flags="" value="10" parameter="9" symbol="model"/>
+    <Controllable name="Tonestack Model" id="361" flags="" value="9" parameter="10" symbol="t_model"/>
+    <Controllable name="Cab Model" id="362" flags="" value="2" parameter="11" symbol="c_model"/>
+    <Controllable name="BYPASS" id="363" flags="Toggle" value="1" parameter="17" symbol="BYPASS"/>
+    <Controllable name="HIGHGAIN" id="364" flags="Toggle" value="0" parameter="18" symbol="HIGHGAIN"/>
+  </Processor>
+  <Processor id="407" name="ZamComp" active="1" user-latency="0" use-user-latency="0" type="lv2" unique-id="urn:zamaudio:ZamComp" count="1" custom="0">
+    <Automation>
+      <AutomationList automation-id="parameter-3" id="408" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-4" id="409" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-5" id="410" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-6" id="411" interpolation-style="Logarithmic" state="Off"/>
+      <AutomationList automation-id="parameter-7" id="412" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-8" id="413" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-9" id="414" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-10" id="415" interpolation-style="Discrete" state="Off"/>
+    </Automation>
+    <ConfiguredInput>
+      <Channels type="audio" count="1"/>
+    </ConfiguredInput>
+    <CustomSinks>
+      <Channels type="audio" count="2"/>
+    </CustomSinks>
+    <ConfiguredOutput>
+      <Channels type="audio" count="1"/>
+    </ConfiguredOutput>
+    <PresetOutput/>
+    <InputMap-0>
+      <Channelmap type="audio" from="0" to="0"/>
+      <Channelmap type="audio" from="1" to="1"/>
+    </InputMap-0>
+    <OutputMap-0>
+      <Channelmap type="audio" from="0" to="0"/>
+    </OutputMap-0>
+    <ThruMap/>
+    <Processor id="416" name="SC Heavy Guitar 1/ZamComp 4" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="sidechain">
+      <IO name="SC Heavy Guitar 1/ZamComp 4" id="417" direction="Input" default-type="audio" pretty-name="SC ZamComp">
+        <Port type="audio" name="SC Heavy Guitar 1/ZamComp 4/audio_in 1"/>
+      </IO>
+    </Processor>
+    <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="0" template-dir="/home/bostick/.config/ardour6/route_templates/Heavy Guitar">
+      <Port symbol="att" value="10"/>
+      <Port symbol="rel" value="80"/>
+      <Port symbol="kn" value="0"/>
+      <Port symbol="rat" value="4"/>
+      <Port symbol="thr" value="0"/>
+      <Port symbol="mak" value="0"/>
+      <Port symbol="slew" value="1"/>
+      <Port symbol="sidech" value="0"/>
+    </lv2>
+    <Controllable name="Attack" id="399" flags="" value="10" parameter="3" symbol="att"/>
+    <Controllable name="Release" id="400" flags="" value="80" parameter="4" symbol="rel"/>
+    <Controllable name="Knee" id="401" flags="" value="0" parameter="5" symbol="kn"/>
+    <Controllable name="Ratio" id="402" flags="" value="4" parameter="6" symbol="rat"/>
+    <Controllable name="Threshold" id="403" flags="" value="0" parameter="7" symbol="thr"/>
+    <Controllable name="Makeup" id="404" flags="" value="0" parameter="8" symbol="mak"/>
+    <Controllable name="Slew" id="405" flags="" value="1" parameter="9" symbol="slew"/>
+    <Controllable name="Sidechain" id="406" flags="Toggle" value="0" parameter="10" symbol="sidech"/>
+  </Processor>
+  <Processor id="454" name="GxGraphicEQ" active="1" user-latency="0" use-user-latency="0" type="lv2" unique-id="http://guitarix.sourceforge.net/plugins/gx_graphiceq_#_graphiceq_" count="1" custom="0">
+    <Automation>
+      <AutomationList automation-id="parameter-0" id="455" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-1" id="456" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-2" id="457" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-3" id="458" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-4" id="459" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-5" id="460" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-6" id="461" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-7" id="462" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-8" id="463" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-9" id="464" interpolation-style="Linear" state="Off"/>
+      <AutomationList automation-id="parameter-10" id="465" interpolation-style="Linear" state="Off"/>
+    </Automation>
+    <ConfiguredInput>
+      <Channels type="audio" count="1"/>
+    </ConfiguredInput>
+    <CustomSinks>
+      <Channels type="audio" count="1"/>
+    </CustomSinks>
+    <ConfiguredOutput>
+      <Channels type="audio" count="1"/>
+    </ConfiguredOutput>
+    <PresetOutput/>
+    <InputMap-0>
+      <Channelmap type="audio" from="0" to="0"/>
+    </InputMap-0>
+    <OutputMap-0>
+      <Channelmap type="audio" from="0" to="0"/>
+    </OutputMap-0>
+    <ThruMap/>
+    <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/bostick/.config/ardour6/route_templates/Heavy Guitar">
+      <Port symbol="G1" value="-30"/>
+      <Port symbol="G2" value="-7.097160816192627"/>
+      <Port symbol="G3" value="1.592353343963623"/>
+      <Port symbol="G4" value="4.1963729858398438"/>
+      <Port symbol="G5" value="-2.4276576042175293"/>
+      <Port symbol="G6" value="-4.1003146171569824"/>
+      <Port symbol="G7" value="-3.0711879730224609"/>
+      <Port symbol="G8" value="-0.53186333179473877"/>
+      <Port symbol="G9" value="0.38511636853218079"/>
+      <Port symbol="G10" value="-2.4276576042175293"/>
+      <Port symbol="G11" value="0"/>
+    </lv2>
+    <Controllable name="G1" id="443" flags="" value="-30" parameter="0" symbol="G1"/>
+    <Controllable name="G2" id="444" flags="" value="-7.097160816192627" parameter="1" symbol="G2"/>
+    <Controllable name="G3" id="445" flags="" value="1.592353343963623" parameter="2" symbol="G3"/>
+    <Controllable name="G4" id="446" flags="" value="4.1963729858398438" parameter="3" symbol="G4"/>
+    <Controllable name="G5" id="447" flags="" value="-2.4276576042175293" parameter="4" symbol="G5"/>
+    <Controllable name="G6" id="448" flags="" value="-4.1003146171569824" parameter="5" symbol="G6"/>
+    <Controllable name="G7" id="449" flags="" value="-3.0711879730224609" parameter="6" symbol="G7"/>
+    <Controllable name="G8" id="450" flags="" value="-0.53186333179473877" parameter="7" symbol="G8"/>
+    <Controllable name="G9" id="451" flags="" value="0.38511636853218079" parameter="8" symbol="G9"/>
+    <Controllable name="G10" id="452" flags="" value="-2.4276576042175293" parameter="9" symbol="G10"/>
+    <Controllable name="G11" id="453" flags="" value="0" parameter="10" symbol="G11"/>
+  </Processor>
+  <Processor id="466" name="meter-Audio 1" active="1" user-latency="0" use-user-latency="0" type="meter"/>
+  <Processor id="467" name="Heavy Guitar 1" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Heavy Guitar 1" type="main-outs" role="Main">
+    <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
+  </Processor>
+  <Slavable/>
+  <Controllable name="monitor" id="483" flags="RealTime" value="0" monitoring=""/>
+  <Controllable name="rec-safe" id="484" flags="Toggle,RealTime" value="0"/>
+  <Controllable name="rec-enable" id="485" flags="Toggle,RealTime" value="0"/>
+</Route>

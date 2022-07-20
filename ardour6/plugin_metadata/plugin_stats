@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PluginStats>
+  <Plugin type="Lua" id="a21bc4a3e93f6fd9b4370402f2a1960634b9f7af" lru="1657833865" use-count="4"/>
+  <Plugin type="LV2" id="urn:ardour:a-reverb" lru="1657843029" use-count="5"/>
+  <Plugin type="LV2" id="urn:ardour:a-exp" lru="1657836294" use-count="1"/>
+  <Plugin type="LV2" id="urn:ardour:a-eq" lru="1657839846" use-count="14"/>
+  <Plugin type="LV2" id="urn:ardour:a-delay" lru="1657836430" use-count="1"/>
+  <Plugin type="LV2" id="urn:ardour:a-comp" lru="1657839806" use-count="20"/>
+  <Plugin type="LV2" id="https://community.ardour.org/node/7596" lru="1657765556" use-count="2"/>
+  <Plugin type="LV2" id="http://sfztools.github.io/sfizz" lru="1657492994" use-count="7"/>
+  <Plugin type="LV2" id="http://plugin.org.uk/swh-plugins/chebstortion" lru="1657835391" use-count="1"/>
+  <Plugin type="LV2" id="http://lsp-plug.in/plugins/lv2/spectrum_analyzer_x16" lru="1657833376" use-count="3"/>
+  <Plugin type="LV2" id="http://lsp-plug.in/plugins/lv2/graph_equalizer_x16_stereo" lru="1657841182" use-count="3"/>
+  <Plugin type="LV2" id="http://lsp-plug.in/plugins/lv2/gate_mono" lru="1657834841" use-count="1"/>
+  <Plugin type="LV2" id="http://guitarix.sourceforge.net/plugins/gxtuner#tuner" lru="1657313839" use-count="2"/>
+  <Plugin type="LV2" id="http://guitarix.sourceforge.net/plugins/gxtape#tape" lru="1657835248" use-count="1"/>
+  <Plugin type="LV2" id="http://guitarix.sourceforge.net/plugins/gx_graphiceq_#_graphiceq_" lru="1657575127" use-count="4"/>
+  <Plugin type="LV2" id="http://guitarix.sourceforge.net/plugins/gx_chorus_stereo#_chorus_stereo" lru="1657843029" use-count="1"/>
+  <Plugin type="LV2" id="http://guitarix.sourceforge.net/plugins/gx_amp#GUITARIX" lru="1657575176" use-count="13"/>
+  <Plugin type="LV2" id="http://drumgizmo.org/lv2" lru="1657409502" use-count="2"/>
+  <Plugin type="LV2" id="http://drobilla.net/plugins/mda/Piano" lru="1657493264" use-count="1"/>
+  <Plugin type="LV2" id="http://drobilla.net/plugins/mda/Limiter" lru="1657841181" use-count="7"/>
+  <Plugin type="LV2" id="http://distrho.sf.net/plugins/3BandEQ" lru="1657833709" use-count="3"/>
+  <Plugin type="LADSPA" id="2141" lru="1657766611" use-count="1"/>
+  <Plugin type="LADSPA" id="1846" lru="1657835351" use-count="1"/>
+  <Plugin type="LADSPA" id="1413" lru="1657845819" use-count="7"/>
+  <Plugin type="LADSPA" id="1227" lru="1657836622" use-count="2"/>
+</PluginStats>

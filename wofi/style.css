@@ -1,0 +1,53 @@
+* {
+    outline: none;
+}
+
+window {
+    margin: 5px;
+    background-color: #3b4252;
+    font-family: "Source Code Pro";
+    font-size: 18px;
+    border-radius: 6px 6px 6px 6px;
+    border: 2px solid #2e3440;
+}
+
+#input {
+    margin: 2px;
+    background-color: #2e3440;
+}
+
+#input:focus {
+    border: 2px solid #d8dee9;
+    border-radius: 6px 6px 6px 6px;
+    outline: none;
+}
+
+#inner-box {
+    background-color: #3b4252;
+}
+
+#outer-box {
+    margin: 5px;
+    border-radius: 6px 6px 6px 6px;
+}
+
+#scroll {
+    margin: 5px;
+    border: #d8dee9;
+}
+
+#text {
+    margin: 5px;
+    color: #d8dee9;
+}
+
+#entry:selected {
+    background-color: #2e3440;
+    color: #d8dee9;
+    border: 2px solid #d8dee9;
+    border-radius: 6px 6px 6px 6px;
+}
+
+#entry:unselected {
+    border: none;
+}
