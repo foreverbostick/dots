@@ -1,0 +1,130 @@
+/* Gruvbox Rofi Theme
+ * Based off the Paper-Float Theme w/ Gruvbox colors
+ */
+
+* {
+    black:      #1d2021;
+    red:        #cc241d;
+    green:      #98971a;
+    yellow:     #d79921;
+    blue:       #458588;
+    magenta:    #b16286;
+    cyan:       #689d6a;
+    white:      #ebdbb2;
+    fg:         var(white);
+    bg:         #282828;
+    background-color:   var(bg);
+    text-color:   var(fg);
+}
+
+element {
+    padding:    1px 5px 1px 5px;
+    cursor:     pointer;
+    spacing:    10px;
+}
+
+element normal.normal {
+    background-color:   var(bg);
+    text-color:         var(fg);
+}
+
+element normal.urgent {
+    background-color:   var(red);
+    text-color:         var(fg);
+}
+
+element normal.active {
+    background-color:   var(yellow);
+    text-color:         var(bg);
+}
+
+element selected.normal {
+    background-color:   var(blue);
+    text-color:         var(fg);
+}
+
+element selected.urgent {
+    background-color:   var(magenta);
+    text-color:         var(fg);
+}
+
+element selected.active {
+    background-color:   var(blue);
+    text-color:         var(fg);
+    padding:            5px 5px 5px 5px;
+}
+
+element alternate.normal {
+    background-color:   var(bg);
+    text-color:         var(fg);
+}
+
+element alternate.urgent {
+    background-color:   var(bg);
+    text-color:         var(fg);
+}
+
+element alternate.active {
+    background-color:   var(bg);
+    text-color:         var(fg);
+}
+
+element-text {
+    background-color:   transparent;
+    cursor:             inherit;
+    highlight:          inherit;
+    text-color:         inherit;
+}
+
+element-icon {
+    background-color:   transparent;
+    size:               1em;
+    cursor:             inherit;
+    text-color:         inherit;
+}
+
+window {
+    padding:            5;
+    background-color:   var(bg);
+    border:             3px;
+    border-color:       var(blue);
+}
+
+mainbox {
+    padding:            10;
+    border:             0;
+}
+
+message {
+    padding:            1px;
+    border-color:       var(blue);
+    border:             2px solid 0px 0px;
+}
+
+textbox {
+    text-color:         var(fg);
+}
+
+listview {
+    padding:            2px 0px 0px;
+    scrollbar:          false;
+    border-color:       var(blue);
+    spacing:            2px;
+    fixed-height:       0;
+    border:             2px solid 0px 0px;
+}
+
+button {
+    cursor:             pointer;
+    spacing:            5;
+    text-color:         var(fg);
+}
+
+button selected {
+    border:             3px;
+    border-color:       var(blue);
+}
+
+prompt {
+    enabled:            false;
+}
